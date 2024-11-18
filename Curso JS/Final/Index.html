@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estructura de Datos</title>
+        <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">   
+        <link rel="stylesheet" href="MyStyles.css">
+    </head>
+
+    <body>
+        <header>
+            <button id = "principal"><h1 id="titulo">POST<br>IT!</h1></button>
+            <input id = "choice" type = "number" class = "input" placeholder="Buscar entrada(solo por ID)">
+            <button id="search"><h4>Buscar</h4><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button id="btnnueva"><h4>Agregar</h4><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
+            <button id = "help">Ayuda<i class ="fa fa-question-circle" aria-hidden="true"></i></button>
+        </header>   
+        
+        <main id = "cuerpo">
+     
+        </main>
+
+        <div class ="nueva-entrada">
+            <div class = "agregar">
+                <div id = "entradacontent">
+                    <button id="entradaCerrar"><i class="fas fa-times-circle"></i></button>
+                    <input id = "img" type = "text" placeholder="ingrese url de imagen">
+                    <input id = "title" type = "text" placeholder="ingrese titulo">
+                    <input id = "core" type = "text" placeholder="ingrese dato">
+                    <button id="ok"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                </div>
+                <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
+            </div>
+        </div>
+
+        <div class ="visor-modal">
+            <div  class="ver">
+                <div id="zoom">
+                     
+                    <button id="zoomCerrar"><i class="fas fa-times-circle"></i></button>
+                </div>    
+            </div>
+                <div id="terminar" style="display: flex; justify-content: flex-end;"></div>
+        </div>
+
+        <footer>
+            <div>
+                <p>
+                    <h6>Esta pagina es una estructura diseñada para almacenar datos ingresados por el usuario, no tengo la suficiente imaginacion como para seguir este texto</h6>
+                </p> 
+            </div>
+        </footer>
+        
+       
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="Entry.js"></script>
+        <script src="entrada.js"></script>
+        <script src="visor.js"></script>
+        <script src="Main .js"></script>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+fieldset {
+    width: 30%;
+    margin: 0 auto;
+    background-color: cornsilk;
+}
+
+legend {
+    margin: 0 auto;
+    background-color: gray;
+    color: white;
+    padding: 1%;
+}
+
+.btnAtras {
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: absolute;
+    display: inline-block;
+}
+
+.btnAtras:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+h1 {
+    color: #55acee;
+    text-align: center;
+}
+
+.link:hover {
+    color: #2ecc71;
+    border-bottom: 2px dotted #2ecc71;
+}
+
+.botones {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.btn:active {
+    transform: translate(0px, 5px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+.azul {
+    background-color: #55acee;
+    box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.azul:hover {
+    background-color: #6FC6FF;
+    cursor: pointer;
+}
+
+.verde {
+    background-color: #2ecc71;
+    box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.verde:hover {
+    background-color: #48E68B;
+    cursor: pointer;
+}
+
+.rojo {
+    background-color: #e74c3c;
+    box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.rojo:hover {
+    background-color: #FF6656;
+    cursor: pointer;
+}
+
+.flecha {
+    background-color: gold;
+    box-shadow: 0px 5px 0px 0px rgb(155, 132, 0);
+}
+
+.flecha:hover {
+    background-color: gold;
+    cursor: pointer;
+}
+
+/* CSS menu nuevo usuario */
+form {
+    text-align: center;
+}
+
+#formNuevoUsuario #flecha {
+    text-align: left;
+}
+
+/* esconder menus al entrar por primera vez */
+#nuevoUsuario, #buscarUsuario, #borrarUsuario {
+    display: none;
+}

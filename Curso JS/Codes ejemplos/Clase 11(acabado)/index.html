@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clase 11 - WORKSHOP I</title>
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <!-- Menú de usuario -->
+    <div id="menuUsuario">
+        <fieldset>
+            <legend>Menú usuario:</legend>
+            <div class="botones">
+                <a class="btn azul" id="buscarCliente">Buscar Cliente</a>
+            </div>
+            <div class="botones">
+                <a class="btn verde" id="nuevoCliente">Añadir Cliente</a>
+            </div>
+            <div class="botones">
+                <a class="btn rojo" id="borrarCliente">Borrar Cliente</a>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- Menú de nuevo usuario -->
+    <div id="nuevoUsuario">
+        <a class="btnAtras flecha">⇚ Volver al menú</a>
+        <form id="formNuevoUsuario">
+            <fieldset>
+                <legend>Nuevo usuario:</legend>
+                <br><label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre"><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido"><br><br>
+                <label for="dni">DNI:</label>
+                <input type="text" name="dni" id="dni"><br><br>
+                <label for="edad">Edad:</label>
+                <input type="date" name="edad" id="edad"><br><br>
+                <input type="submit" class="btn verde" id="nUser" value="Enviar">
+            </fieldset>
+        </form>
+    </div>
+    <!-- fin menú nuevo usuario -->
+
+    <!-- Menú buscar usuario -->
+    <div id="buscarUsuario">
+        <a class="btnAtras flecha">⇚ Volver al menú</a>
+        <form id="formBuscarUsuario">
+            <fieldset>
+                <legend>Buscar usuario:</legend>
+                <br><label for="dniBuscar">DNI:</label>
+                <input type="text" name="dniBuscar" id="dniBuscar"><hr><br>
+                <div id="personaEncontrada"></div>
+                <input type="submit" class="btn verde" value="Buscar">
+            </fieldset>
+        </form>
+    </div>
+    <!-- fin menú buscar usuario -->
+
+    <!-- borrar usuario -->
+    <div id="borrarUsuario">
+        <a class="btnAtras flecha">⇚ Volver al menú</a>
+        <form id="formBorrarUsuario">
+            <fieldset>
+                <legend>Buscar cliente a borrar:</legend>
+                <br><label for="dniBorrar">DNI:</label>
+                <input type="text" name="dniBuscar" id="dniBorrar">
+                <input type="button" id="buscar" value="🔍︎"><hr><br>
+                <div id="personaEncontradaBorrar"></div>
+                <input type="submit" class="btn rojo" value="Borrar">
+            </fieldset>
+        </form>
+    </div>
+    <!-- fin borrar usuario -->
+
+    <!-- scripts js -->
+    <script src="js/persona.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
